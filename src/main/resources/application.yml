@@ -1,0 +1,21 @@
+server:
+  ip: 8.134.170.55
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 本地环境
+#    url: jdbc:mysql://localhost:3306/mydb?serverTimezone=GMT%2b8
+    # 网络环境
+    url: jdbc:mysql://8.134.170.55:3306/mydb?serverTimezone=GMT%2b8
+    username: root
+    password: 111
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+#    path: D:/test/files/
+     path: /home/files/
